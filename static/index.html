@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./background_donotexist.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Do not exsit is an application made for looking for a specific version of yourself created by an AI">
+    <meta name="Author" content="Félix Jely">
+    <meta name = "og : donotexist" property = "og : donotexist" content = "Do not exist is an application made for looking for a specific version of yourself created by an AI">
+    <meta name="keywords" content="artificial intelligence, interactive, participative">
+    <title>donotexist.online</title>
+    <script type="module" crossorigin src="./assets/index-284c0e73.js"></script>
+    <link rel="stylesheet" href="./assets/index-9e754ca6.css">
+  </head>
+  <body>
+    <div id="app">
+    
+      <section class="error hidden">
+        <h1>Error:</h1>
+        <p class="error_content"></p>
+      </section>
+
+
+      <button class="info">Info</button>
+
+      <section class="info_modal hidden">
+
+        <h2>Information</h2>
+
+        This website tries to show you your doppelganger whose face was made by an artificial intelligence. 
+        For a given face, based on your landmarks, the algorithm tries to get the most similar faces, from a dataset of faces renders of <a href="https://thispersondoesnotexist.com/">thispersondoesnotexist</a>. 
+        These images are the result of an Nvidia research project:  a <a href="https://github.com/NVlabs/stylegan2">StyleGan2</a> algorithm that generates fake image that was trained of on flickr faces dataset (FFHQ). 
+        From its given dataset the algorithm creates new faces that do not exist on its training dataset.
+        <br>
+        It’s an online version of a student art project made at la HEAR at Strasburg, France. 
+        Note that all what the algorithm outputs is uncontrolled and not meant to be taken seriously.
+        No image nor face data is stored in this application.
+        <br>
+
+        There is a blog post that explains further how the algorithm works
+        The frontend was built with native js in vitejs. The backend is made in python with flask, face recognition, numpy and pillows.
+
+        <h2>Colophon</h2>
+
+        Design and code by <a href="https://www.felixjely.fr">Félix Jely</a>. 
+        The font is Sligoil by Ariel Martín Pérez.
+
+      </section>
+
+
+      <section class="waiting hidden">
+        <div>
+          <span>P</span>
+          <span>r</span>
+          <span>o</span>
+          <span>c</span>
+          <span>e</span>
+          <span>s</span>
+          <span>s</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
+        </div>
+
+      </section>
+
+      <div class="border borderTop"></div>
+      <div class="border borderRight"></div>
+      <div class="border borderLeft"></div>
+      <div class="border borderBottom"></div>
+      <button id="but_start">
+        open the camera
+      </button>
+      <button id="but_launch" class="hidden">
+        send the image
+      </button>
+      
+      <video id="videoElement"></video>
+      <div class="result hidden">
+        <div class="swiper">
+          <button class="close">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </button>
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="btn-swipper button-prev">
+            <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.92 144.89"><path d="M186.92,72.44C143.66,56.4,89.98,29.01,56.71,0l23.45,64.82H7.62c-4.21,0-7.62,3.41-7.62,7.62s3.41,7.62,7.62,7.62H80.16l-23.45,64.83c33.27-29.01,86.95-56.4,130.21-72.45Z"/></svg>
+          </div>
+          <div class="btn-swipper button-next">
+            <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.92 144.89"><path d="M186.92,72.44C143.66,56.4,89.98,29.01,56.71,0l23.45,64.82H7.62c-4.21,0-7.62,3.41-7.62,7.62s3.41,7.62,7.62,7.62H80.16l-23.45,64.83c33.27-29.01,86.95-56.4,130.21-72.45Z"/></svg>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    
+  </body>
+  <!--
+    code and design by
+                  
+                  ***** **              ***
+                ******  **** *            ***
+              **   *  *  ***              **
+              *    *  *    *               **
+                  *  *                     **       ****     ***    ***
+                ** **            ***      **      * ***  * * ***  **** *
+                ** **           * ***     **     *   ****     *** *****
+                ** ******      *   ***    **    **    **       ***  **
+                ** *****      **    ***   **    **    **        ***
+                ** **         ********    **    **    **       * ***
+                *  **         *******     **    **    **      *   ***
+                    *          **          **    **    **     *     ***
+                *****          ****    *   **     ******     *       *** *
+              *  *****         *******    *** *   ****     *         ***
+              *    ***           *****      ***
+              *
+              **
+
+  -->
+</html>
